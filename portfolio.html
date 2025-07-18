@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Siddhant Kumar Singh, Full Stack Developer skilled in React, Node.js, MongoDB, and more."
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Siddhant Kumar Singh | PortFolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9983fd05dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">PortFolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Siddhant</span> Kumar Singh</h1>
+          <h3>Computer Science & Engineering | AKTU | @ Final Year</h3>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="user.jpg" />
+          </div>
+          <div class="about-col-2" data-aos="fade-up">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I’m a passionate Full Stack Developer with a strong foundation in
+              front-end and back-end development. I enjoy transforming ideas
+              into real-world solutions using React, Node.js, and modern web
+              technologies. Currently pursuing my B.Tech in Computer Science &
+              Engineering, I'm eager to apply my skills in collaborative,
+              impactful projects that challenge me to grow.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Achievements
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Languages</span><br />HTML, CSS, JavaScript, C/C++
+                </li>
+                <li>
+                  <span>Frameworks & Libraries</span><br />React.JS, Node.JS,
+                  Express.JS
+                </li>
+                <li>
+                  <span>Tools & Platforms</span><br />Git & GitHub, Docker,
+                  Jenkins, AWS(S3, Amplify)
+                </li>
+                <li><span>Databases</span><br />MySQL, MongoDB</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>Certification</span><br />Earned Full Stack Developer
+                  Certificate from Dev-Evelopers Community.
+                </li>
+                <li>
+                  <span>Contributions</span><br />Active contributor on GitHub
+                  with regularly updated project repositories.
+                </li>
+                <li>
+                  <span>Open Socurce Activities</span><br />Participated in
+                  multipe coding challenges and open source activities.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>2018</span><br />High-School From UP BOARD.</li>
+                <li><span>2020</span><br />Intermediate From UP BOARD.</li>
+                <li>
+                  <span>2020-2023</span><br />Diploma In Mechanical Engineering
+                  From Govt. Polytechnic Mahoba(BTEUP).
+                </li>
+                <li>
+                  <span>2023-still Today</span><br />Pursuing B.Tech In Computer
+                  Science & Engg (@ 4th year) From AKTU.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+
+        <div class="services-list">
+          <div>
+            <i class="fas fa-palette"></i>
+            <h2>Responsive UI/UX Design</h2>
+            <p>
+              I can make interfaces for WebSites with extraordinary activities
+              and creativeness. I have an expertise on Web Designing that helps
+              me to make the sites colorful instantly. For more Information
+              Click learn more
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-cogs"></i>
+            <h2>Interactive Web Functionality (JavaScript)</h2>
+            <p>
+              Develop interactive and dynamic websites using vanilla JavaScript.
+              I specialize in DOM manipulation, API integration, form
+              validations, and event handling to build seamless user
+              experiences.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fab fa-react"></i>
+            <h2>React.js Frontend Development</h2>
+            <p>
+              I develop scalable single-page applications using React.js,
+              leveraging components, hooks, props, and state management to
+              create fast and modular front-end architectures. I also integrate
+              APIs and manage routing with React Router.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-plug"></i>
+            <h2>API Integration & Data Handling</h2>
+            <p>
+              I implement RESTful API calls to fetch, display, and manipulate
+              external data using JavaScript or React. I handle asynchronous
+              operations with `fetch()` and `axios`, and manage data flow with
+              effective state management techniques.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png" />
+            <div class="layer">
+              <h3>Home Appliances Repairing Services Website</h3>
+              <p>
+                A static website built with HTML5, Tailwind CSS, and JavaScript
+                to offer home appliance repair services. I implemented a
+                responsive layout and designed clean UI sections to simulate
+                real-world booking flows.
+              </p>
+              <a href="http://repairing-services-website.vercel.app" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png" />
+            <div class="layer">
+              <h3>Video Streaming Website</h3>
+              <p>
+                Developed a video streaming web app using React.js with JWT
+                authentication and chunked video streaming via HTML5 video and
+                Range requests. Built custom components for video controls and
+                routing.
+              </p>
+              <a href="https://vid-tube-theta.vercel.app" rel="noopener noreferrer" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" />
+            <div class="layer">
+              <h3>Google Gemini Clone</h3>
+              <p>
+                A Gemini AI UI clone built with React.js and API integration for
+                conversational chat. Designed responsive layouts and implemented
+                smooth transitions between chat messages and components.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>Singhsiddhantkumar539@gmail.com</p>
+            <p>+91 8052470537</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100051856909038 "
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://github.com/Siddhant-Raghuwanshi-JS"><i class="fab fa-github"></i></a>
+              <a
+                href="https://www.instagram.com/_.siddhant_singh_raghuwanshi._?igsh=NTc4MTIwNjQ2YQ=="
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/siddhant-kumar-singh-9044252a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="my-cv.pdf" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Messeage"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Siddhant. Made <span class="p1">&hearts;</span> by
+          The Owner
+        </p>
+      </div>
+    </div>
+
+    <div id="scrollToTop" onclick="scrollToTop()">↑</div>
+
+    <script>
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+      window.onscroll = function () {
+        document.getElementById("scrollToTop").style.display =
+          window.scrollY > 300 ? "block" : "none";
+      };
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
